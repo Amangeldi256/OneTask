@@ -7,10 +7,13 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args)  {
-        System.out.println("Hello, World!");
-        String path = "ABCword\\src\\first.txt";
-        String path2 = "ABCword\\src\\second.txt";
-        File firstFile = new File(path2);
+        
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Give the file number 01 or 02 or another.");
+        String number = scanner.next();
+        String path = "ABCword\\src\\" + number + ".txt";
+        //String path2 = "ABCword\\src\\second.txt";
+        File firstFile = new File(path);
 
         try {
            // File file = new File(fileName);
