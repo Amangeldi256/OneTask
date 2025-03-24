@@ -9,9 +9,11 @@ public class App {
     public static void main(String[] args)  {
         
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Give the file number 01 or 02 or another.");
-        String number = scanner.next();
-        String path = "ABCword\\src\\" + number + ".txt";
+        System.out.println("Write the file name is first or second or another.");
+        String word = scanner.next();
+        //String path = System.getProperty("C:\\Users\\User\\Desktop\\Новая папка (2)\\Projects\\File X\\ABCword\\src\\") + word;
+
+        String path = "C:\\Users\\User\\Desktop\\Новая папка (2)\\Projects\\File X\\ABCword\\src\\" + word;
         //String path2 = "ABCword\\src\\second.txt";
         File firstFile = new File(path);
 
